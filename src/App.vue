@@ -1,10 +1,9 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/"></router-link> 
   </nav>
   <router-view/>
-</template>
+ </template>
 
 <style lang="less">
 #app {
@@ -13,8 +12,13 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+ 
 }
 
+
+*{
+  background-color: rgb(74, 78, 99);
+}
 nav {
   padding: 30px;
 
@@ -23,7 +27,7 @@ nav {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #000000;
     }
   }
 }

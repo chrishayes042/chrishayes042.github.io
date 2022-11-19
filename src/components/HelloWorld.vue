@@ -1,35 +1,35 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+   <h1><font-awsome-icons icon="HatWizard" /></h1> 
+ 
+   
+   <font-awesome-icon icon="fab" />
+    
+    
+    <h3>About Me</h3>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+      I'm a software engineer. Currently working for <a href="https://bc.com" target="_blank"> Boise Cascade.</a> 
+      <br><br>At Boise Cascade we utilize Java swing with SpringBoot to build features and maintain an in-house monolith desktop application.
+      <br><br> I'm working on progressing my web development skills to build fast webpages.
+      <br><br> I'm passionate about building useful and efficient software and would love to get to build/architech software for a huge userbase.
+      <br><br> I have a bachelors of science degree in Computer Science. I've worked in sales, IT, supply chain management, and now development.
+      <br><br> I have a cat named Daisy and she likes to supervize me while I code.
+      <br><br> Connect with me on <a href="https://linkedin.com/in/chris-hayes-79308864/" target="_blank">
+                                    <font-awesome-icon size="2x" id="icon" title="LinkedIn" :icon="['fab', 'linkedin']" />
+                                  </a>
+      <br><br> Follow me on <a href="https://github.com/chrishayes042" target="_blank"> 
+                             <font-awesome-icon size="2x" id="icon" title="Github" :icon="['fab', 'github']" />
+                            </a>
+
+
     </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript" target="_blank" rel="noopener">typescript</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <h3>About this page</h3>
+    <p>
+      This page is built with VueJS. <font-awesome-icon title="Vue" :icon="['fab', 'vuejs']" />
+
+    </p>
+    
   </div>
 </template>
 
@@ -50,6 +50,15 @@ export default class HelloWorld extends Vue {
 <style scoped lang="less">
 h3 {
   margin: 40px 0 0;
+  color: aqua;
+}
+#icon{
+  color: black;
+}
+p{
+  padding: 0;
+  display: inline-flexbox;
+  color: antiquewhite;
 }
 ul {
   list-style-type: none;
@@ -60,6 +69,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #b942af;
 }
 </style>
