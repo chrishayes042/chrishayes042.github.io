@@ -7,7 +7,8 @@ npm run build
 cd dist
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
-git initgit add -A
+git init
+git add -A
 git commit -m 'deploy'
 git push -f git@github.com:chrishayes042/chrishayes042.github.io.git master:gh-pages
 cd -
