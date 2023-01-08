@@ -34,3 +34,7 @@ li a:hover {
   background-color: hsl(147, 40%, 55%);
   color: hsl(147, 40%, 29%);
 }
+
+p {
+  color: hsl(175, 0%, 65%);
+}
