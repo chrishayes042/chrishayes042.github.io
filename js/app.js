@@ -1,6 +1,22 @@
-let iconTag = document.getElementById("icon");
-let aboutMeTag = document.getElementById("aboutMe");
+const App = () => {
+  const div = document.createElement("div");
+  div.classList.add("container");
 
-iconTag.innerHTML = "<a href='https://github.com/chrishayes042'>CLICK HERE</a>";
+  div.innerHTML = `
+                    <nav id="navDiv">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                     </ul>   
+                    </nav>
+                    `;
+  return div;
+};
 
-aboutMeTag.innerHTML = "<p> I'm a software engineer</p>";
+function render(component, parent) {
+  parent.innerHTML = "";
+  parent.appendChild(component);
+}
+
+render(App(), document.querySelector("#root"));
