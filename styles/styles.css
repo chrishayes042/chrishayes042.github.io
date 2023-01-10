@@ -5,7 +5,10 @@
 h1 {
   color: hsl(175, 0%, 65%);
 }
-
+#daisy {
+  height: 450px;
+  width: 500px;
+}
 #navDiv {
   width: 100%;
   margin: 0 auto;

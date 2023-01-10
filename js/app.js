@@ -10,6 +10,13 @@ const App = () => {
                         <li><a href="">Contact</a></li>
                      </ul>   
                     </nav>
+                    <hr>
+                    <div id="pContainer">
+                        <p></p>
+                    </div>
+                    <div id="imageDaisy">
+                        <image id="daisy" src="assets/daisy.png"></image>
+                    </div>
                     `;
   return div;
 };
