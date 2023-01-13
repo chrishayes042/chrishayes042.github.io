@@ -19,7 +19,7 @@ const App = () => {
                     </div>
                     <div id="aboutMe">
                     <h1>About Me</h1>
-                     <p>I'm  I love my cat Daisy</p> <p>I like keyboards and I have too many of them. My current favorite is my RealForce R2. But I have several others that I rotate through</p>
+                     <p>I love my cat Daisy</p> <p>I like keyboards and I have too many of them. My current favorite is my RealForce R2. But I have several others that I rotate through</p>
                      <p>Check out my <a href="assets/ChrisHayesResume2023.pdf">resume</a> </p>
                     </div>
                     <div id="contactDiv">
