@@ -19,8 +19,8 @@ const App = () => {
                     </div>
                     <div id="aboutMe">
                     <h1>About Me</h1>
-                     <p>I'm  I love my cat Daisy</p> 
-                     <a href="assets/ChrisHayesResume2023.pdf">Resume</a>
+                     <p>I'm  I love my cat Daisy</p> <p>I like keyboards and I have too many of them. My current favorite is my RealForce R2. But I have several others that I rotate through</p>
+                     <p>Check out my </p><a href="assets/ChrisHayesResume2023.pdf">resume</a>
                     </div>
                     <div id="contactDiv">
                       <h1>Contact Me!</h1>
