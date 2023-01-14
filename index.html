@@ -7,9 +7,24 @@
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="assets/bigfoot.png" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div v-if="showBooks">
+        <p>{{ title }}</p>
+        <p>{{ name }}</p>
+        <p>{{ age }}</p>
+      </div>
+
+      <button @click="toggleShowBooks()">
+        <span v-if="showBooks">Hide Books</span>
+        <span v-else>Show Books</span>
+        <!-- <span v-if="!showBooks"></span> -->
+      </button>
+
+      <div v-show="showBooks">currently showing books</div>
+    </div>
 
     <script src="js/app.js"></script>
   </body>
