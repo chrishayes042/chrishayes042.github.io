@@ -24,6 +24,8 @@
       </button>
 
       <div v-show="showBooks">currently showing books</div>
+      <video id="videoCam" @click="openWebCam()">Show Camera</video>
+      <button @click="closeWebCam()">Close WebCam</button>
     </div>
 
     <script src="js/app.js"></script>
