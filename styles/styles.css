@@ -1,5 +1,5 @@
 * {
-  /* background-color: hsl(240, 10%, 10%); */
+  background-color: hsl(240, 10%, 10%);
 }
 
 h1 {
@@ -46,4 +46,24 @@ li a:hover {
 
 p {
   color: hsl(175, 0%, 65%);
+}
+button {
+  margin: 10px;
+}
+#startButton {
+  background-color: hsl(147, 100%, 59%);
+  color: rgb(3, 61, 3);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px, 8px, 15px, rgb(0, 0, 0, 0.1);
+}
+#stopButton {
+  background-color: hsl(0, 100%, 70%);
+  color: hsl(0, 100%, 19%);
+  border: none;
+  border-radius: 45px;
+}
+
+#stopButton:hover {
+  box-shadow: 20px, 28px, 15px, rgb(0, 0, 0, 0.1);
 }

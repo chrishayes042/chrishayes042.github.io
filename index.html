@@ -11,7 +11,7 @@
   </head>
   <body>
     <div id="root">
-      <div v-if="showBooks">
+      <!-- <div v-if="showBooks">
         <p>{{ title }}</p>
         <p>{{ name }}</p>
         <p>{{ age }}</p>
@@ -20,12 +20,15 @@
       <button @click="toggleShowBooks()">
         <span v-if="showBooks">Hide Books</span>
         <span v-else>Show Books</span>
-        <!-- <span v-if="!showBooks"></span> -->
+        <span v-if="!showBooks"></span>
       </button>
 
-      <div v-show="showBooks">currently showing books</div>
+      <div v-show="showBooks">currently showing books</div> -->
       <video id="videoCam" @click="openWebCam()">Show Camera</video>
-      <button @click="closeWebCam()">Close WebCam</button>
+      <div>
+        <button id="startButton" @click="openWebCam()">Start Stream</button>
+        <button id="stopButton" @click="closeWebCam()">Stop Stream</button>
+      </div>
     </div>
 
     <script src="js/app.js"></script>

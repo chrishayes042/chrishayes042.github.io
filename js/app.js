@@ -46,13 +46,15 @@ const root = Vue.createApp({
     closeWebCam() {
       var video = document.getElementById("videoCam");
       var stream = video.srcObject;
-      var tracks = stream.getTracks();
-      tracks.forEach((track) => {
-        track.stop();
-      });
+      if (stream != null) {
+        var tracks = stream.getTracks();
+        tracks.forEach((track) => {
+          track.stop();
+        });
 
-      video.srcObject = null;
-      console.log("Stream Stopped");
+        video.srcObject = null;
+        console.log("Stream Stopped");
+      }
     },
   },
 });
