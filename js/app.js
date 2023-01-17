@@ -45,13 +45,13 @@ const root = Vue.createApp({
     // doesn't quite work...
     closeWebCam() {
       var video = document.getElementById("videoCam");
-      All_mediaDevices.getUserMedia({
-        audio: true,
-        video: true,
-      }).then(function () {
-        video.pause();
-        video.src = "";
+      var stream = video.srcObject;
+      var tracks = stream.getTracks();
+      tracks.forEach((track) => {
+        track.stop();
       });
+
+      video.srcObject = null;
       console.log("Stream Stopped");
     },
   },
